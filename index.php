@@ -26,7 +26,7 @@
                     <select name="constructeur">
                         <option value="">--Choisir un constructeur--</option>
                         <?php
-                            include("php/selection/selectionConstructeur.php");
+                            include("php/bdd/sortie/selectionConstructeur.php");
                         ?>
                     </select>
                 </div>
@@ -37,7 +37,7 @@
                     <select name="console">
                         <option value="">--Choisir une console--</option>
                         <?php
-                            include("php/selection/selectionConsole.php");
+                            include("php/bdd/sortie/selectionConsole.php");
                         ?>
                     </select>
                 </div>

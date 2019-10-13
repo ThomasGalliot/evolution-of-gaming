@@ -1,5 +1,5 @@
 <?php
-    include('php/connection/connectionDB.php');
+    include('php/bdd/connection/connectionDB.php');
 
     $requete = $bdd->query("SELECT * FROM console");
     $selectionConsole = $requete->fetchAll();
