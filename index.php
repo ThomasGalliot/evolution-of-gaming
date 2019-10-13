@@ -5,7 +5,6 @@
             include("php/view/cdn/google/addGoogleAnalytics.php");
             include("php/view/cdn/google/addGoogleAds.php");
             include("php/view/cdn/css/bootstrap.php");
-            include("php/view/cdn/css/materialize.php");
         ?>
       
         <meta charset="utf-8" />
@@ -51,7 +50,6 @@
 
         <?php
             include("php/view/cdn/js/bootstrap.php");
-            include("php/view/cdn/js/materialize.php");
         ?>
     </body>
 </html>
