@@ -4,14 +4,13 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP DATABASE IF EXISTS `evolutioerevog`;
 CREATE DATABASE IF NOT EXISTS `evolutioerevog` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `evolutioerevog`;
 
-DROP TABLE IF EXISTS `console`;
 CREATE TABLE IF NOT EXISTS `console` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom_console` varchar(100) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `date_de_creation` date DEFAULT NULL,
   `constructeur_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `constructeur_id` (`constructeur_id`),
@@ -20,36 +19,36 @@ CREATE TABLE IF NOT EXISTS `console` (
 
 DELETE FROM `console`;
 /*!40000 ALTER TABLE `console` DISABLE KEYS */;
-INSERT INTO `console` (`id`, `nom_console`, `constructeur_id`) VALUES
-	(1, 'NES', 1),
-	(2, 'megadrive', 2),
-	(3, 'SNES', 1),
-	(4, 'Nintento64', 1);
+INSERT INTO `console` (`id`, `nom`, `date_de_creation`, `constructeur_id`) VALUES
+	(1, 'NES', NULL, 1),
+	(2, 'megadrive', NULL, 2),
+	(3, 'SNES', NULL, 1),
+	(4, 'Nintento64', NULL, 1);
 /*!40000 ALTER TABLE `console` ENABLE KEYS */;
 
-DROP TABLE IF EXISTS `constructeur`;
 CREATE TABLE IF NOT EXISTS `constructeur` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom_constructeur` varchar(100) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `date_de_creation` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 DELETE FROM `constructeur`;
 /*!40000 ALTER TABLE `constructeur` DISABLE KEYS */;
-INSERT INTO `constructeur` (`id`, `nom_constructeur`) VALUES
-	(1, 'Nintendo'),
-	(2, 'SEGA');
+INSERT INTO `constructeur` (`id`, `nom`, `date_de_creation`) VALUES
+	(1, 'Nintendo', NULL),
+	(2, 'SEGA', NULL);
 /*!40000 ALTER TABLE `constructeur` ENABLE KEYS */;
 
-DROP TABLE IF EXISTS `jeux_videos`;
 CREATE TABLE IF NOT EXISTS `jeux_videos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `image` varchar(255) DEFAULT NULL,
-  `nom` varchar(100) DEFAULT NULL,
-  `region` varchar(10) DEFAULT NULL,
-  `developpeur` varchar(255) DEFAULT NULL,
-  `editeur` varchar(255) DEFAULT NULL,
-  `console_id` int(11) DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `region` varchar(10) NOT NULL,
+  `developpeur` varchar(255) NOT NULL,
+  `editeur` varchar(255) NOT NULL,
+  `date_de_creation` date NOT NULL,
+  `console_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `console_id` (`console_id`),
   CONSTRAINT `jeux_videos_ibfk_1` FOREIGN KEY (`console_id`) REFERENCES `console` (`id`)
