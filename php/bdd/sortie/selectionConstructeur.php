@@ -5,6 +5,6 @@
     $selectionConstructeur = $requete->fetchAll();
 
     foreach($selectionConstructeur as $constructeur) {
-        echo "<option value='" . htmlspecialchars($constructeur['nom_constructeur']) . "'>" . htmlspecialchars($constructeur['nom_constructeur']) . "</option>";
+        echo "<option value='" . htmlspecialchars($constructeur['id']) . "'>" . htmlspecialchars($constructeur['nom_constructeur']) . "</option>";
     }
 ?>

@@ -6,7 +6,7 @@
             include("php/view/cdn/google/addGoogleAds.php");
             include("php/view/cdn/css/bootstrap.php");
         ?>
-      
+
         <meta charset="utf-8" />
         <title>Evolution Of Gaming</title>
     </head>
@@ -19,12 +19,12 @@
              sur quelque chose n'hésitez pas à nous le faire savoir sur notre discord que voici : <a href="https://discord.gg/2DEcgqU">discord</a></p>
         
         <div>
-            <form action="" method="post">
+            <form action="#" method="post">
                 <div>
                     <label for="constructeur-select">constructeur:</label>
 
                     <select name="constructeur">
-                        <option value="">--Choisir un constructeur--</option>
+                        <option value="" selected="selected">--Choisir un constructeur--</option>
                         <?php
                             include("php/bdd/sortie/selectionConstructeur.php");
                         ?>
@@ -32,10 +32,10 @@
                 </div>
 
                 <div>
-                    <label for="console-select">console:</label>
+                    <label for="console">console:</label>
                 
                     <select name="console">
-                        <option value="">--Choisir une console--</option>
+                        <option id="0" value="" selected="selected">--Choisir une console--</option>
                         <?php
                             include("php/bdd/sortie/selectionConsole.php");
                         ?>
@@ -51,5 +51,6 @@
         <?php
             include("php/view/cdn/js/bootstrap.php");
         ?>
+        <script type="text/javascript" src="js/modifSelectConsole.js"></script>
     </body>
 </html>

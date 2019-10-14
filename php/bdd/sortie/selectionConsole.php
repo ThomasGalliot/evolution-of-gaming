@@ -3,8 +3,11 @@
 
     $requete = $bdd->query("SELECT * FROM console");
     $selectionConsole = $requete->fetchAll();
-
-    foreach($selectionConsole as $console) {
-        echo "<option value='" . htmlspecialchars($console['nom_console']) . "'>" . htmlspecialchars($console['nom_console']) . "</option>";
+    
+    $i = 1;
+    
+    foreach($selectionConsole as $console) {    
+        echo "<option id='" . $i . "' class='" . htmlspecialchars($console['constructeur_id']) . "' value='" . htmlspecialchars($console['id']) . "'>" . htmlspecialchars($console['nom_console']) . "</option>";
+        $i++;
     }
 ?>
