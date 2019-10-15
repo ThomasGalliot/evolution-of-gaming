@@ -7,20 +7,6 @@
 CREATE DATABASE IF NOT EXISTS `evolutioerevog` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `evolutioerevog`;
 
-CREATE TABLE IF NOT EXISTS `constructeur` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(100) NOT NULL,
-  `date_de_creation` date NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
-DELETE FROM `constructeur`;
-/*!40000 ALTER TABLE `constructeur` DISABLE KEYS */;
-INSERT INTO `constructeur` (`id`, `nom`, `date_de_creation`) VALUES
-	(1, 'Nintendo', '1889-09-23'),
-	(2, 'SEGA', '1960-06-03');
-/*!40000 ALTER TABLE `constructeur` ENABLE KEYS */;
-
 CREATE TABLE IF NOT EXISTS `console` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(100) NOT NULL,
@@ -40,11 +26,24 @@ INSERT INTO `console` (`id`, `nom`, `date_de_creation`, `constructeur_id`) VALUE
 	(4, 'Nintento64', '1996-06-23', 1);
 /*!40000 ALTER TABLE `console` ENABLE KEYS */;
 
+CREATE TABLE IF NOT EXISTS `constructeur` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(100) NOT NULL,
+  `date_de_creation` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+DELETE FROM `constructeur`;
+/*!40000 ALTER TABLE `constructeur` DISABLE KEYS */;
+INSERT INTO `constructeur` (`id`, `nom`, `date_de_creation`) VALUES
+	(1, 'Nintendo', '1889-09-23'),
+	(2, 'SEGA', '1960-06-03');
+/*!40000 ALTER TABLE `constructeur` ENABLE KEYS */;
+
 CREATE TABLE IF NOT EXISTS `jeux_videos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `image` varchar(255) NOT NULL,
   `nom` varchar(100) NOT NULL,
-  `region` varchar(10) NOT NULL,
   `developpeur` varchar(255) NOT NULL,
   `editeur` varchar(255) NOT NULL,
   `date_de_creation` date NOT NULL,
@@ -56,8 +55,8 @@ CREATE TABLE IF NOT EXISTS `jeux_videos` (
 
 DELETE FROM `jeux_videos`;
 /*!40000 ALTER TABLE `jeux_videos` DISABLE KEYS */;
-INSERT INTO `jeux_videos` (`id`, `image`, `nom`, `region`, `developpeur`, `editeur`, `date_de_creation`, `console_id`) VALUES
-	(1, 'img/jeuxVideos/images.jpg', 'The Legend of Zelda: Ocarina of Time', 'PAL-FAH', 'Nintendo', 'Nintendo', '1998-11-21', 4);
+INSERT INTO `jeux_videos` (`id`, `image`, `nom`, `developpeur`, `editeur`, `date_de_creation`, `console_id`) VALUES
+	(1, 'img/jeuxVideos/images.jpg', 'The Legend of Zelda: Ocarina of Time', 'Nintendo', 'Nintendo', '1998-11-21', 4);
 /*!40000 ALTER TABLE `jeux_videos` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
