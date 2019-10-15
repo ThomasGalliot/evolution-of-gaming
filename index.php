@@ -8,15 +8,19 @@
         ?>
 
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css">
         <title>Evolution Of Gaming</title>
     </head>
-    <body>
-        <h1>Evolution Of Gaming</h1>
-        <p>Bonjour et bienvenue sur Evolution Of Gaming, Nous tenons à signaler qu'il s'agit d'une version alpha, sur ce site
+    <body class="background-body">
+        <?php include("navbar.php");?>
+        <div>
+            <h1 style="text-align: center;">Evolution Of Gaming</h1>
+            <p>Bonjour et bienvenue sur Evolution Of Gaming, Nous tenons à signaler qu'il s'agit d'une version alpha, sur ce site
              nous allons référencer tout les jeux pour chaque console pour toutes les régions, ainsi que tout les bundles et
              toute les éditions limitées pour chaque jeux et consoles de jeu. Il y aura aussi plein de petites choses sur chaque
              jeux, comme des easter eggs, des glitchs, etc..., tout ça, c'est pour la première version. si vous voyez des oublis
              sur quelque chose n'hésitez pas à nous le faire savoir sur notre discord que voici : <a href="https://discord.gg/2DEcgqU">discord</a></p>
+        </div>
         
         <div>
             <form action="#" method="post">
