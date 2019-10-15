@@ -50,6 +50,7 @@
                         </div>
                     </form>
                 </div>
+<<<<<<< HEAD
             </div>
             
 
@@ -60,6 +61,17 @@
             ?>
         </div>
         <?php include("footer.php") ?>
+=======
+            </form>
+            <?php
+                include("php/bdd/sortie/affichageJeux.php");
+            ?>
+        </div>
+
+        <?php
+            include("php/view/cdn/js/bootstrap.php");
+        ?>
+>>>>>>> ac99e67ffd2baacc3dd43386f93043679f3906aa
         <script type="text/javascript" src="js/modifSelectConsole.js"></script>
     </body>
 </html>
