@@ -53,6 +53,8 @@
         </div>
 
         <?php
+            include("php/bdd/sortie/affichageJeux.php");
+
             include("php/view/cdn/js/bootstrap.php");
         ?>
         <script type="text/javascript" src="js/modifSelectConsole.js"></script>
