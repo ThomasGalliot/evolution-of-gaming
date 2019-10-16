@@ -102,7 +102,7 @@ INSERT INTO `jeux_videos` (`id`, `image`, `nom_jv`, `date_de_creation`, `console
 	(7, 'img/jeuxVideos/64Ozumo2.jpg', '64 Ōzumō 2', '1999-03-19', 1, 4, 2),
 	(8, 'img/jeuxVideos/64deHakken!TamagotchiMinnadeTamagotchi.jpg', '64 de Hakken! Tamagotchi Minna de Tamagotchi...', '1997-12-19', 1, 5, 2),
 	(9, 'img/jeuxVideos/64HanafudaTenshinoYakusoku.jpg', '64 Hanafuda: Tenshi no Yakusoku', '1999-11-05', 1, 6, 2),
-	(10, 'img/jeuxVideos/64TrumpCollectionAlicenoWakuWakuTrump.jpg', '64 Trump Collection: Alice no Waku Waku Trump...', '1998-08-07', 1, NULL, 2);
+	(10, 'img/jeuxVideos/64TrumpCollectionAlicenoWakuWakuTrump.jpg', '64 Trump Collection: Alice no Waku Waku Trump...', '1998-08-07', 1, 7, 2);
 /*!40000 ALTER TABLE `jeux_videos` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
