@@ -7,7 +7,7 @@
     $i = 1;
     
     foreach($selectionConsole as $console) {    
-        echo "<option id='" . $i . "' class='" . htmlspecialchars($console['constructeur_id']) . "' value='" . htmlspecialchars($console['id']) . "'>" . htmlspecialchars($console['nom']) . "</option>";
+        echo "<option id='console" . $i . "' class='" . htmlspecialchars($console['constructeur_id']) . "' value='" . htmlspecialchars($console['id']) . "'>" . htmlspecialchars($console['nom']) . "</option>";
         $i++;
     }
 ?>
