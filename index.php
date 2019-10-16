@@ -50,7 +50,7 @@
                                 <label for="region">région:</label>
         
                                 <select name="region" class="form-control">
-                                    <option id="region0" value="" selected="selected">--Choisir une région--</option>
+                                    <option id="region0" value="" selected="selected">voir tout les jeux</option>
                                     <?php include("php/bdd/sortie/selectionRegion.php");?>
                                 </select>
                             </div>
