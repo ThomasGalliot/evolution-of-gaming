@@ -2,12 +2,9 @@
     include("php/bdd/connection/connectionDB.php");
 
     if (isset($_POST['console']) && isset($_POST['region'])) {
-        if ($_POST['region'] == "") {
-            $requete = $bdd->query("SELECT * FROM jeux_videos WHERE console_id_jv = " . $_POST['console'] . " ORDER BY date_de_creation");
-        }
         if ($_POST['console'] != "") {
             if ($_POST['region'] == "") {
-                $requete = $bdd->query("SELECT * FROM jeux_videos, info_complemantaire_jv WHERE console_id_jv = " . $_POST['console'] . " AND info_complemantaire_jv.id = info_complemantaire_jv_id ORDER BY date_de_creation");
+                $requete = $bdd->query("SELECT * FROM jeux_videos, region, info_complemantaire_jv WHERE console_id_jv = " . $_POST['console'] . " AND region.id = region_id AND info_complemantaire_jv.id = info_complemantaire_jv_id ORDER BY date_de_creation");
             }
             else {
                 $requete = $bdd->query("SELECT * FROM jeux_videos, region, info_complemantaire_jv WHERE console_id_jv = " . $_POST['console'] . " AND region_id = " . $_POST['region'] . " AND region.id = region_id AND info_complemantaire_jv.id = info_complemantaire_jv_id ORDER BY date_de_creation");
