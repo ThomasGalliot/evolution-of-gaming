@@ -12,16 +12,16 @@
             $affichageJeuxVideos = $requete->fetchAll();
         
             foreach ($affichageJeuxVideos as $jeuVideo) {
-                echo "<div class='card text-center bg-color' style='width: 19rem;'>
+                echo "<div class='card text-center bg-color d-inline-block col-3' style='width: 20rem;'>
                     <div class='card-header'>
-                        <img class='card-img-top' src='" . $jeuVideo['image'] . "'
+                        <img class='card-img-top rounded mx-auto' src='" . $jeuVideo['image'] . "'
                         alt='image du jeux " . $jeuVideo['nom_jv'] . "' />
                     </div>
                     <div class='card-body bg-color'>
                         <div class='card-title'>
                             <p class='text-light bg-success'>" . $jeuVideo['nom_jv'] . "</p>
                         </div>
-                        <div class='col-12'>
+                        <div>
                             <div class='card-text'>
                                 <p>développeur: " . $jeuVideo['developpeur'] . "</p>
                             </div>
@@ -35,7 +35,7 @@
                                 <p>date de sorti: " . $jeuVideo['date_de_creation'] . "</p>
                             </div>
                         </div>
-                        <div class='card-footer'></div>
+                        <a href='#' class='btn btn-success card-footer col-12 btn-color'>Voir plus</a>
                     </div>
                 </div>";
             }
