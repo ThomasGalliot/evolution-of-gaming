@@ -12,12 +12,12 @@ $(document).ready(function(){
         i = 0;
 
         while (i < length) {
-            if (i === 0 || $('#' + i).hasClass(constructeur)) {
-                $('#' + i).show();
+            if (i === 0 || $('#console' + i).hasClass(constructeur)) {
+                $('#console' + i).show();
             }
 
             else {
-                $('#' + i).hide();
+                $('#console' + i).hide();
             }
 
             i++;
