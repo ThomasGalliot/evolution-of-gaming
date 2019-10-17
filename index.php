@@ -67,11 +67,7 @@
                 include("php/bdd/sortie/affichageJeux.php");
             ?>
         </div>
-        <?php
-            include("footer.php");
-            
-            include("php/view/cdn/js/bootstrap.php");
-        ?>
+        <?php include("footer.php") ?>
         <script type="text/javascript" src="js/modifSelectConsole.js"></script>
         <script type="text/javascript" src="js/modifSelectRegion.js"></script>
     </body>
