@@ -18,7 +18,7 @@
                         alt='image du jeux " . $jeuVideo['nom_jv'] . "' />
                     </div>
                     <div class='container-fluid'>
-                        <div class='row card-body bg-color'>
+                        <div class='card-body bg-color'>
                             <div class='card-title'>
                                 <p class='text-light bg-success'>" . $jeuVideo['nom_jv'] . "</p>
                             </div>

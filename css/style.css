@@ -47,7 +47,7 @@ html {
 
 .item1{
     height: 70vh;
-    background-image: url('../img/hero/landscape.jpg');
+    background-image: url('../img/hero/image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -57,7 +57,7 @@ html {
 
 .item2{
     height: 70vh;
-    background-image: url('../img/hero/forest.jpg');
+    background-image: url('../img/hero/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -67,7 +67,7 @@ html {
 
 .item3{
     height: 70vh;
-    background-image: url('../img/hero/fantasy.jpg');
+    background-image: url('../img/hero/image3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -77,7 +77,7 @@ html {
 
 .item4{
     height: 70vh;
-    background-image: url('../img/hero/toxic.jpg');
+    background-image: url('../img/hero/image4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
