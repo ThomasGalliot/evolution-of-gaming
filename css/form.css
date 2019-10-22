@@ -1,0 +1,67 @@
+.form-frame{
+  background: #343a40;
+  background-size: cover;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+/* url(../img/form-background.jpg) */
+
+/* #343a40 */
+
+.form-signin {
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 55px;
+  transition: opacity .5s ease, transform .5s ease;
+  -webkit-transition: opacity .5s ease, transform .5s ease;
+  -moz-transition: opacity .5s ease, transform .5s ease;
+  -ms-transition: opacity .5s ease, transform .5s ease;
+  -o-transition: opacity .5s ease, transform .5s ease;
+}
+
+.form-styling {
+  width: 100%;
+  height: 35px;
+	padding-left: 15px;
+	border: none;
+	border-radius: 20px;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+}
+
+.label-form {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: rgb(17, 148, 0);
+  display: block;
+}
+
+.btn-signin {
+  float: left;
+  padding-top: 8px;
+  width: 100%;
+  height: 35px;
+	border: none;
+	border-radius: 20px;
+  margin-top: -8px;
+  background-color: #006400;
+}
+
+.btn-signin:hover {
+    cursor: pointer; 
+    background-color: rgb(0, 129, 0);
+    transition: background-color .5s; 
+}
+
+#title-form{
+  color: #a7ff9f;
+  font-size: 35px;
+	font-weight: 300;
+  text-align: center !important;
+}
