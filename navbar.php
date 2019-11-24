@@ -18,10 +18,10 @@
     </ul>
     <div >
         <a href="#" class="btn btn-success btn-md margin-btn" role="button" >Inscription</a>
-        <a href="#" class="btn btn-secondary btn-md margin-btn" role="button">Conexion</a>
+        <a href="#" class="btn btn-secondary btn-md margin-btn" role="button">Connexion</a>
     </div>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
     </form>
   </div>

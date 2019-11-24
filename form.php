@@ -1,6 +1,6 @@
 <!--Start Form-->
 
-<div class="p-5 col-lg-4 offset-4 container-fluid">
+<div class="p-5 col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2 container-fluid">
         <div class="form-frame row">
             <h1 id="title-form" class="col-lg-10 offset-lg-1 pt-5">Choix des jeux</h1>
 
